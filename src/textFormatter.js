@@ -15,9 +15,7 @@ export function nodesToANSI(nodes) {
     const element = node;
     const ansiCode = +(element.className.split("-")[1]);
     
-    // Simple color code application without state tracking
     if (ansiCode) {
-      // Apply formatting
       if (ansiCode === 1) {
         text += "\x1b[1m";
       } else if (ansiCode === 4) {
@@ -26,10 +24,8 @@ export function nodesToANSI(nodes) {
         text += `\x1b[${ansiCode}m`;
       }
       
-      // Process child nodes
       text += nodesToANSI(element.childNodes);
       
-      // Reset after this element
       text += "\x1b[0m";
     } else {
       text += nodesToANSI(element.childNodes);

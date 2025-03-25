@@ -1,12 +1,11 @@
-/* Remove tailwind import as it's not needed */
-/* @import "tailwindcss"; */
+@import "tailwindcss"; */
 
-/* Base styles */
+
 [contenteditable] {
     outline: none;
 }
 
-/* ANSI Classes */
+
 .ansi-1 { font-weight: 700; text-decoration: none; }
 .ansi-4 { font-weight: 500; text-decoration: underline; }
 
