@@ -1,4 +1,4 @@
-import { Button, Container, Paper, Stack, Text, Title } from "@mantine/core"
+import { Container, Paper, Stack, Text, Title } from "@mantine/core"
 import Buttons from "./Buttons"
 import TextEditor from "./TextEditor"
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <Container size="lg">
         <Stack gap="xl">
-          <Title>Discord <Text span c="discord" inherit>Colored</Text> Text Genrator</Title>
+          <Title>Discord <Text span c="discord" inherit>Colored</Text> Text Generator</Title>
           <Paper shadow="sm" p="md" radius="md" withBorder>
           <Title order={3} mb="md">About</Title>
           <Text mb="sm">This is a simple app that creates colored Discord messages using the ANSI color codes available on the latest Discord desktop versions.</Text>
